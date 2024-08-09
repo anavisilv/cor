@@ -63,5 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
 git clone https://github.com/anavisilv/seletor-de-cores.git
 cd seletor-de-cores
 git add .
-git commit -m "Adicionar seletor de cores"
+git commit -m "cores"
 git push origin main
