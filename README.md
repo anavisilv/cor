@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <h1>Seletor de Cores</h1>
-        <input type="color" id="colorPicker" value="#578748">
-        <div id="colorDisplay" class="color-display"></div>
-        <p id="colorValue">Código da Cor: #578748</p>
+        <input type="color" id="cor vermelha" vermelha="#578748">
+        <div id="cor verde" class="cor verde"></div>
+        <p id="cor vermelha">Código da Cor: #578748</p>
     </div>
     <script src="script.js"></script>
 </body>
@@ -30,7 +30,7 @@ body {
     text-align: center;
 }
 
-.color-display {
+.cor verde {
     width: 100px;
     height: 100px;
     margin: 20px auto;
@@ -39,7 +39,7 @@ body {
     background-color: #158575;
 }
 
-input[type="color"] {
+input[type="cor"] {
     border: none;
     width: 50px;
     height: 50px;
@@ -50,14 +50,14 @@ p {
     font-size: 1.2em;
 }
 document.addEventListener('DOMContentLoaded', function() {
-    const colorPicker = document.getElementById('colorPicker');
-    const colorDisplay = document.getElementById('colorDisplay');
-    const colorValue = document.getElementById('colorValue');
+    const cor azul = document.getElementById('cor azul');
+    const cor verde = document.getElementById('cor verde');
+    const cor vermelha = document.getElementById('cor vermelha');
 
-    colorPicker.addEventListener('input', function(event) {
-        const selectedColor = event.target.value;
-        colorDisplay.style.backgroundColor = selectedColor;
-        colorValue.textContent = `Código da Cor: ${selectedColor}`;
+    cor azul.addEventListener('input', function(event) {
+        const selectedColor = event.target.vermelha;
+        cor verde.style.backgroundColor = selectedColor;
+        cor vermelha.textContent = `Código da Cor: ${selectedColor}`;
     });
 });
 git clone https://github.com/anavisilv/seletor-de-cores.git
